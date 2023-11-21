@@ -1,6 +1,9 @@
 # Docker-Playground
 Primeros pasos para aprender Docker :)
 
+![Getting-started-with-Docker](https://github.com/nakiviar/Docker-Playground/assets/54564415/040eec04-0a58-420a-b206-2446e2d5467d)
+
+
 ## Conceptos basicos
 
 Comencemos con los conceptos básicos:
