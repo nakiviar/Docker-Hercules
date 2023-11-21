@@ -40,4 +40,19 @@ Probemos primero si se instalo correctamente, para ello comprobamos la version
 ```diff
 docker --version
 ```
-Y
+Luego vamos a ejecutar el siguiente comando, para verificar que docker esta funcionando bien:
+
+```diff
+docker run hello-world
+```
+![image](https://github.com/nakiviar/Docker-Playground/assets/54564415/007a1ff2-27fe-4ebb-b019-fa834b2975cc)
+
+
+1. **El cliente de Docker contactó al daemon de Docker**: Docker funciona en un modelo cliente-servidor. El cliente de Docker es la interfaz que utilizas para interactuar con Docker, y el daemon de Docker es el proceso que gestiona los contenedores. En este paso, el cliente se comunicó con el daemon para ejecutar la acción que le indicaste.
+
+2. **El daemon de Docker descargó la imagen "hello-world" desde Docker Hub**: Docker Hub es un registro público de imágenes Docker. Cuando ejecutaste docker run hello-world, el daemon notó que no tenía la imagen "hello-world" localmente, así que la descargó desde Docker Hub. La imagen "hello-world" es una imagen de prueba comúnmente utilizada para verificar la instalación de Docker.
+
+3. **El daemon de Docker creó un nuevo contenedor a partir de esa imagen**: Una vez que la imagen "hello-world" estuvo disponible localmente, el daemon creó un nuevo contenedor a partir de esa imagen. Un contenedor es una instancia en ejecución de una imagen Docker.
+
+4. **El daemon de Docker transmitió la salida del contenedor al cliente**:El contenedor "hello-world" ejecutó un programa simple que generó el mensaje que estás leyendo. El daemon transmitió esta salida al cliente de Docker, que a su vez la mostró en tu terminal.
+
