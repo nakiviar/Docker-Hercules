@@ -35,3 +35,9 @@ Ademas permite una mejor interoperabilidad entre el entorno Windows y el entorno
 > Nota para la instalacion. Al instalar Docker Desktop, obtienes tanto el cliente de Docker (interfaz de línea de comandos que te permite interactuar con Docker) como el daemon de Docker (el proceso en segundo plano que gestiona los contenedores). Además, Docker Desktop incluye una interfaz gráfica de usuario que facilita la visualización de contenedores, imágenes y otros recursos de Docker.
 
 ## Primeros comandos
+
+Probemos primero si se instalo correctamente, para ello comprobamos la version  
+```diff
+docker --version
+```
+Y
