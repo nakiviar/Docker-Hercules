@@ -100,7 +100,7 @@ docker ps -a
 ```
 ![docker_psa](https://github.com/nakiviar/Docker-Playground/assets/54564415/68b825f6-2cc9-47dd-ac04-5d37c202f2fa)
 
-eliminar el contenedor por el nombre o id
+eliminar el contenedor por el nombre o id:
  
 ```diff
 docker rm [nombre_del_contenedor]
@@ -109,3 +109,13 @@ docker rm [id_del_contenedor_tres_primeras_letras]
 ```
 ![docker_rm](https://github.com/nakiviar/Docker-Playground/assets/54564415/05344ac1-5492-4cf0-98f9-1004bc131cf0)
 
+eliminar una o más imágenes de Docker de su sistema:
+
+```diff
+docker rmi [nombre_del_contenedor]
+```
+![docker_rmi](https://github.com/nakiviar/Docker-Playground/assets/54564415/683829e9-c03f-43fd-a04a-be6ef44d4cc0)
+
+> [!WARNING]
+> Para eliminar la imagen, primero debes detener y eliminar los contenedores existentes.
+> ![docker_error_rmi](https://github.com/nakiviar/Docker-Playground/assets/54564415/fc10a925-5527-4753-b8eb-286e967beb4f)
