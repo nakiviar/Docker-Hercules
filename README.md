@@ -56,3 +56,23 @@ docker run hello-world
 
 4. **El daemon de Docker transmitió la salida del contenedor al cliente**:El contenedor "hello-world" ejecutó un programa simple que generó el mensaje que estás leyendo. El daemon transmitió esta salida al cliente de Docker, que a su vez la mostró en tu terminal.
 
+Creamos un contenedor en base a una imagen existente desde su ultima version:
+```diff
+docker run nginx
+```
+![docker_nginx](https://github.com/nakiviar/Docker-Playground/assets/54564415/cc00e9e1-5135-4640-8321-bc14b263bd2b)
+
+Creamos un contenedor en base a una imagen existente desde una version especifica:
+```diff
+docker run nginx:[version]
+```
+para eliminar el proceso, se usa el CTRC + C
+
+```diff
+docker run nginx:[version]
+```
+
+Listar los contenedores activos como tambien los que estan detenidos:
+```diff
+docker ps -a
+```
