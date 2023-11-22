@@ -125,7 +125,7 @@ docker rmi [nombre_del_contenedor]
 
 
 ```diff
-docker run -p [LOCAL_PORT:CONTAINER_PORT] --name [nombre_del contenedor] [imagen]
+docker run -p [PUERTO_HOST:PUERTO_CONTENEDOR] --name [nombre_del contenedor] [imagen]
 ```
 ```diff
 docker run -p 80:80 --name contenedor1 nginx
