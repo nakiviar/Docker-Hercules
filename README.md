@@ -122,3 +122,15 @@ docker rmi [nombre_del_contenedor]
 > [!WARNING]
 > Para eliminar la imagen, primero debes detener y eliminar los contenedores existentes.
 > ![docker_error_rmi](https://github.com/nakiviar/Docker-Playground/assets/54564415/fc10a925-5527-4753-b8eb-286e967beb4f)
+
+
+```diff
+docker run -p [LOCAL_PORT:CONTAINER_PORT] --name [nombre_del contenedor] [imagen]
+```
+```diff
+docker run -p 80:80 --name contenedor1 nginx
+```
+![image](https://github.com/nakiviar/Docker-Playground/assets/54564415/dbc3c9d2-895b-476a-8214-16abb26c6a66)
+![image](https://github.com/nakiviar/Docker-Playground/assets/54564415/e74684a2-eff7-474c-9dab-9fe2ddf0f31f)
+
+
