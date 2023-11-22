@@ -62,14 +62,27 @@ docker run nginx
 ```
 ![docker_nginx](https://github.com/nakiviar/Docker-Playground/assets/54564415/cc00e9e1-5135-4640-8321-bc14b263bd2b)
 
+Este es un contenedor que se queda escuchando en un puerto por defecto que es el puerto 80. Esto pasa porque los contenedores gnix  se basan en el servidor web Nginx, que está diseñado para escuchar en una conexión TCP/IP. Esto significa que cualquier cliente que se conecte al contenedor en el puerto 80 podrá acceder al servidor web Nginx.
+
 Creamos un contenedor en base a una imagen existente desde una version especifica:
 ```diff
 docker run nginx:[version]
 ```
-para eliminar el proceso, se usa el CTRC + C
+para detener el proceso, se usa el ```Ctrl + C```
+
+> [!NOTE]
+> Cuando le das Ctrl+C a un contenedor que se está ejecutando, estás enviando una señal SIGINT al proceso principal del contenedor. Esta señal indica al proceso que se detenga de forma inmediata.
+> El proceso principal de un contenedor gnix es el servidor web Nginx. 
+> En el caso de los contenedores hello-world, el proceso principal es un shell.
+
 
 ```diff
 docker run nginx:[version]
+```
+
+Listar los contenedores que se estan ejecutando actualmente:
+```diff
+docker ps
 ```
 
 Listar los contenedores activos como tambien los que estan detenidos:
