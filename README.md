@@ -123,7 +123,7 @@ docker rmi [nombre_del_contenedor]
 > Para eliminar la imagen, primero debes detener y eliminar los contenedores existentes.
 > ![docker_error_rmi](https://github.com/nakiviar/Docker-Playground/assets/54564415/fc10a925-5527-4753-b8eb-286e967beb4f)
 
-
+Creamos un contenedor personalizado:
 ```diff
 docker run -p [PUERTO_HOST:PUERTO_CONTENEDOR] --name [nombre_del contenedor] [imagen]
 ```
@@ -133,4 +133,16 @@ docker run -p 80:80 --name contenedor1 nginx
 ![image](https://github.com/nakiviar/Docker-Playground/assets/54564415/dbc3c9d2-895b-476a-8214-16abb26c6a66)
 ![image](https://github.com/nakiviar/Docker-Playground/assets/54564415/e74684a2-eff7-474c-9dab-9fe2ddf0f31f)
 
+Creamos un contenedor personalizado en segundo plano:
+```diff
+docker run -d -p 80:80 --name contenedor2 nginx
+```
+![docker_run_d](https://github.com/nakiviar/Docker-Playground/assets/54564415/5c3c596c-d626-430b-bcd0-e3dbfd5ce222)
 
+> -d: Este parámetro se utiliza para ejecutar el contenedor en segundo plano (modo "detach"). Esto significa que el contenedor se ejecutará en segundo plano, y el terminal estará disponible para que puedas seguir utilizando.
+
+Ejecutar comandos dentro de un contenedor Docker en ejecución:
+```diff
+docker exec -it [nombre_del contenedor] bash
+```
+![docker_exec](https://github.com/nakiviar/Docker-Playground/assets/54564415/f50d395c-23b9-4b3d-97d7-5018f321a9e1)
