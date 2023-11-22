@@ -76,16 +76,36 @@ para detener el proceso, se usa el ```Ctrl + C```
 > En el caso de los contenedores hello-world, el proceso principal es un shell.
 
 
+Listar todas las imagenes:
 ```diff
-docker run nginx:[version]
+docker images
 ```
+![docker_images](https://github.com/nakiviar/Docker-Playground/assets/54564415/4a34d50d-ee60-4f8b-aa5e-90982218408c)
+
+Listar imagenes por repositorio:
+```diff
+docker images [repositorio]
+```
+![docker_images_with_repo](https://github.com/nakiviar/Docker-Playground/assets/54564415/a424cad0-1b05-41eb-b504-1226b5813fe7)
 
 Listar los contenedores que se estan ejecutando actualmente:
 ```diff
 docker ps
 ```
+![docker_ps](https://github.com/nakiviar/Docker-Playground/assets/54564415/95134415-ec28-49f6-80f1-ba57b4a6ac31)
 
 Listar los contenedores activos como tambien los que estan detenidos:
 ```diff
 docker ps -a
 ```
+![docker_psa](https://github.com/nakiviar/Docker-Playground/assets/54564415/68b825f6-2cc9-47dd-ac04-5d37c202f2fa)
+
+eliminar el contenedor por el nombre o id
+ 
+```diff
+docker rm [nombre_del_contenedor]
+docker rm [id_del_contenedor]
+docker rm [id_del_contenedor_tres_primeras_letras]
+```
+![docker_rm](https://github.com/nakiviar/Docker-Playground/assets/54564415/05344ac1-5492-4cf0-98f9-1004bc131cf0)
+
