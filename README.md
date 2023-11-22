@@ -36,7 +36,10 @@ Ademas permite una mejor interoperabilidad entre el entorno Windows y el entorno
 
 ## Primeros comandos
 
-Probemos primero si se instalo correctamente, para ello comprobamos la version  
+> [!NOTE]
+> Podemos probar los comandos de docker sin tener instalado nada en el local, usando [Play With Docker](https://labs.play-with-docker.com/)
+
+Probemos primero si se instalo correctamente, para ello comprobamos la version:
 ```diff
 docker --version
 ```
